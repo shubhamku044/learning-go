@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -17,7 +18,7 @@ func main() {
 
 	fmt.Println("You entered:", input)
 
-	numRating, err := strconv.ParseFloat(input, 64)
+	numRating, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
 
 	if err != nil {
 		fmt.Println("Error while parsing input", err)

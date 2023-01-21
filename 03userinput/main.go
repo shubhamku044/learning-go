@@ -17,5 +17,4 @@ func main() {
 	text, _ := reader.ReadString('\n')
 	fmt.Println("You entered:", text)
 	fmt.Printf("Variable text of type: %T \n", text)
-
 }
